@@ -1,0 +1,32 @@
+
+DATA_PATH, n, d, k: /home/philipp/data-for-pc-sos-sdp-solver/tae.txt 151 5 3
+CONSTRAINTS_PATH: /home/philipp/data-for-pc-sos-sdp-solver/tae_constraints_0.1.txt
+LOG_PATH: /home/philipp/data-for-pc-sos-sdp-solver/tae_log_0.1.txt
+
+BRANCH_AND_BOUND_TOL: 0.0001
+BRANCH_AND_BOUND_PARALLEL: 16
+BRANCH_AND_BOUND_MAX_NODES: 200
+BRANCH_AND_BOUND_VISITING_STRATEGY: 0
+
+SDP_SOLVER_SESSION_THREADS_ROOT: 16
+SDP_SOLVER_SESSION_THREADS: 1
+SDP_SOLVER_FOLDER: /home/pc-sos-sdp/SDPNALv1.0/SDPNAL+v1.0/
+SDP_SOLVER_TOL: 1e-05
+SDP_SOLVER_VERBOSE: 1
+SDP_SOLVER_MAX_CP_ITER_ROOT: 80
+SDP_SOLVER_MAX_CP_ITER: 40
+SDP_SOLVER_CP_TOL: 1e-06
+SDP_SOLVER_MAX_INEQ: 100000
+SDP_SOLVER_INHERIT_PERC: 1
+SDP_SOLVER_EPS_INEQ: 0.0001
+SDP_SOLVER_EPS_ACTIVE: 1e-06
+SDP_SOLVER_MAX_PAIR_INEQ: 100000
+SDP_SOLVER_PAIR_PERC: 0.05
+SDP_SOLVER_MAX_TRIANGLE_INEQ: 100000
+SDP_SOLVER_TRIANGLE_PERC: 0.05
+
+
+|    N| NODE_PAR|    NODE|      LB_PAR|          LB|  FLAG|  TIME (s)| CP_ITER| CP_FLAG|   CP_INEQ|     PAIR  TRIANGLE    CLIQUE|          UB|         GUB|     I      J|     NODE_GAP|          GAP|  OPEN|
+|  111|       -1|       0|        -inf|      588.33|     0|        65|      10|      -3|      2685|     56.7      3050         3|     593.006|    593.006*|    -1     -1|   0.00788642|   0.00788642|     0|
+|  111|        0|       1|      588.33|     588.582|     0|        15|       3|      -3|      3268|        0       792         0|     593.006|     593.006|    35     63|   0.00746104|   0.00746104|     0|
+|  110|        0|       2|      588.33|     589.579|     0|        37|       5|       3|      2503|        0      1605         0|     594.097|     593.006|    35     63|   0.00578015|   0.00578015|     0|
