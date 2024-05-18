@@ -10,7 +10,7 @@ BRANCH_AND_BOUND_VISITING_STRATEGY: 0
 
 SDP_SOLVER_SESSION_THREADS_ROOT: 16
 SDP_SOLVER_SESSION_THREADS: 1
-SDP_SOLVER_FOLDER: /home/pc-sos-sdp/SDPNALv1.0/SDPNAL+v1.0/
+SDP_SOLVER_FOLDER: /home/pc-sos-sdp/SDPNAL+/
 SDP_SOLVER_TOL: 1e-05
 SDP_SOLVER_VERBOSE: 1
 SDP_SOLVER_MAX_CP_ITER_ROOT: 80
@@ -27,15 +27,15 @@ SDP_SOLVER_TRIANGLE_PERC: 0.05
 
 
 |    N| NODE_PAR|    NODE|      LB_PAR|          LB|  FLAG|  TIME (s)| CP_ITER| CP_FLAG|   CP_INEQ|     PAIR  TRIANGLE    CLIQUE|          UB|         GUB|     I      J|     NODE_GAP|          GAP|  OPEN|
-|  102|       -1|       0|        -inf|     1026.44|     0|        49|       2|      -3|      5247|    124.5      5000         0|     1027.69|    1027.69*|    -1     -1|   0.00121408|   0.00121408|     0|
-|  101|        0|       1|     1026.44|     1027.64|     0|        21|       1|       2|      5342|       83      5000         0|     1027.69|     1027.69|    58     89|  4.57915e-05|  4.57915e-05|     0|
-|  102|        0|       2|     1026.44|     1028.12|     0|        32|       1|       2|      5714|       80      5000         0|         inf|     1027.69|    58     89| -0.000414086| -0.000414086|     0|
+|  102|       -1|       0|        -inf|     1026.44|     0|       162|       2|      -3|      5247|    124.5      5000         0|     1027.69|    1027.69*|    -1     -1|    0.0012141|    0.0012141|     0|
+|  101|        0|       1|     1026.44|     1027.64|     0|        89|       1|       2|      5342|       83      5000         0|     1027.69|     1027.69|    58     89|  4.57913e-05|  4.57913e-05|     0|
+|  102|        0|       2|     1026.44|     1028.12|     0|       124|       1|       2|      5714|       80      5000         0|         inf|     1027.69|    58     89| -0.000418764| -0.000418764|     0|
 
-WALL_TIME: 89 sec
+WALL_TIME: 334 sec
 N_NODES: 3
 AVG_INEQ: 5095.83
 AVG_CP_ITER: 1.33333
-ROOT_GAP: 0.00121408
+ROOT_GAP: 0.0012141
 GAP: 0
 BEST: 1027.69
 
