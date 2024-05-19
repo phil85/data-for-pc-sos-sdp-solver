@@ -1,0 +1,41 @@
+
+DATA_PATH, n, d, k: /home/philipp/data-for-pc-sos-sdp-solver/movement_libras.txt 360 90 15
+CONSTRAINTS_PATH: /home/philipp/data-for-pc-sos-sdp-solver/movement_libras_constraints_0.2.txt
+LOG_PATH: /home/philipp/data-for-pc-sos-sdp-solver/movement_libras_log_0.2.txt
+
+BRANCH_AND_BOUND_TOL: 0.0001
+BRANCH_AND_BOUND_PARALLEL: 16
+BRANCH_AND_BOUND_MAX_NODES: 200
+BRANCH_AND_BOUND_VISITING_STRATEGY: 0
+
+SDP_SOLVER_SESSION_THREADS_ROOT: 16
+SDP_SOLVER_SESSION_THREADS: 1
+SDP_SOLVER_FOLDER: /home/pc-sos-sdp/SDPNAL+/
+SDP_SOLVER_TOL: 1e-05
+SDP_SOLVER_VERBOSE: 1
+SDP_SOLVER_MAX_CP_ITER_ROOT: 80
+SDP_SOLVER_MAX_CP_ITER: 40
+SDP_SOLVER_CP_TOL: 1e-06
+SDP_SOLVER_MAX_INEQ: 100000
+SDP_SOLVER_INHERIT_PERC: 1
+SDP_SOLVER_EPS_INEQ: 0.0001
+SDP_SOLVER_EPS_ACTIVE: 1e-06
+SDP_SOLVER_MAX_PAIR_INEQ: 100000
+SDP_SOLVER_PAIR_PERC: 0.05
+SDP_SOLVER_MAX_TRIANGLE_INEQ: 100000
+SDP_SOLVER_TRIANGLE_PERC: 0.05
+
+
+|    N| NODE_PAR|    NODE|      LB_PAR|          LB|  FLAG|  TIME (s)| CP_ITER| CP_FLAG|   CP_INEQ|     PAIR  TRIANGLE    CLIQUE|          UB|         GUB|     I      J|     NODE_GAP|          GAP|  OPEN|
+|  205|       -1|       0|        -inf|       17451|     0|       302|       5|      -3|      4594|       65      2847         0|     18124.4|    18124.4*|    -1     -1|    0.0371569|    0.0371569|     0|
+|  205|        0|       1|       17451|     17458.1|     0|       148|       2|      -3|      3094|        0       135         0|     18166.9|     18124.4|   129    184|    0.0367623|    0.0367623|     0|
+|  204|        0|       2|       17451|     17463.1|     0|       163|       2|      -3|      5722|      5.5      1268         0|     18107.6|    18107.6*|   129    184|     0.035593|     0.035593|     0|
+|  205|        1|       3|     17458.1|     17461.1|     0|       125|       1|      -3|      3094|        0       193         0|       18113|     18107.6|     5     49|    0.0357019|    0.0357019|     0|
+|  204|        1|       4|     17458.1|     17471.8|     0|       149|       2|      -3|      3164|        0     347.5         0|     18113.7|     18107.6|     5     49|    0.0351135|    0.0351135|     0|
+|  204|        2|       5|     17463.1|     17465.6|     0|       180|       1|      -3|      5722|        0       307         0|     18107.6|     18107.6|     5    191|    0.0354561|    0.0354561|     0|
+|  205|        3|       6|     17461.1|     17463.6|     0|       143|       1|      -3|      3094|        6      1541         0|     18118.7|     18107.6|     8    131|    0.0355623|    0.0355623|     0|
+|  204|        4|       7|     17471.8|     17488.5|     0|       130|       1|      -3|      3164|        0       573         0|     18113.7|     18107.6|   177    188|    0.0341911|    0.0341911|     0|
+|  204|        3|       8|     17461.1|     17479.5|     0|       191|       2|      -3|      3206|        0       289         0|     17908.5|    17908.5*|     8    131|    0.0239582|    0.0239582|     0|
+|  203|        2|       9|     17463.1|     17480.7|     0|       359|       3|      -3|      5474| 0.666667   414.333         0|     18125.4|     17908.5|     5    191|    0.0238876|    0.0238876|     0|
+|  203|        4|      10|     17471.8|     17483.2|     0|       297|       3|      -3|      5296|        4      1221         0|     18128.7|     17908.5|   177    188|     0.023751|     0.023751|     0|
+|  205|        6|      11|     17463.6|     17466.2|     0|       178|       1|      -3|      3094|        0       567         0|     18118.7|     17908.5|     6    129|    0.0246964|    0.0246964|     0|
