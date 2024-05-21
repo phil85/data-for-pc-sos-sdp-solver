@@ -27,9 +27,9 @@ SDP_SOLVER_TRIANGLE_PERC: 0.05
 
 
 |    N| NODE_PAR|    NODE|      LB_PAR|          LB|  FLAG|  TIME (s)| CP_ITER| CP_FLAG|   CP_INEQ|     PAIR  TRIANGLE    CLIQUE|          UB|         GUB|     I      J|     NODE_GAP|          GAP|  OPEN|
-|  249|       -1|       0|        -inf|     12084.2|     0|       105|       2|       0|     11258|      656      5000         1|     12084.2|    12084.2*|    -1     -1|  8.04428e-07|  8.04428e-07|     0|
+|  249|       -1|       0|        -inf|     12084.2|     0|       103|       2|       0|     11258|      656      5000         1|     12084.2|    12084.2*|    -1     -1|  8.04428e-07|  8.04428e-07|     0|
 
-WALL_TIME: 132 sec
+WALL_TIME: 131 sec
 N_NODES: 1
 AVG_INEQ: 5657
 AVG_CP_ITER: 2
